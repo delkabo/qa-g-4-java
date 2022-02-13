@@ -31,7 +31,6 @@ public class TextBoxTest {
                 text("Some address 1"), text("Other address 2"));
 
         $("#name").shouldHave(text("Alex"));
-        $("#currentAddress").shouldHave(text("Some address 1")); // wrong
         $("#currentAddress", 1).shouldHave(text("Some address 1"));
         $("#output").$("#currentAddress").shouldHave(text("Some address 1"));
         $("#output #currentAddress").shouldHave(text("Some address 1"));
